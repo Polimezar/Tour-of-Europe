@@ -1,0 +1,25 @@
+.review-author {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.review-author__photo {
+  margin-bottom: 10px;
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-right: 15px;
+  }
+}
+
+.review-author__name {
+  margin: 0;
+  color: #2c2e3f;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: $content-letter-spacing;
+}

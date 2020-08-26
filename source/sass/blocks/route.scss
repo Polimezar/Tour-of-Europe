@@ -1,0 +1,45 @@
+.route {
+  @media (min-width: 1024px) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.route__container {
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding: 20px 16px 0 16px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 86px;
+    margin-left: 0;
+    padding: 100px 20px 0;
+  }
+}
+
+.route__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 1045px;
+  overflow-y: hidden;
+
+  @media (min-width: 768px) {
+    height: 780px;
+  }
+
+  @media (min-width: 1024px) {
+    max-height: 593px;
+  }
+}
+
+.route__tour {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

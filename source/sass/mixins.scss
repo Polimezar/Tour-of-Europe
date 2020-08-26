@@ -1,0 +1,22 @@
+@mixin wrapper ($width, $margin) {
+  width: $width;
+  margin: $margin;
+}
+
+@mixin list-style ($margin, $padding, $type-style) {
+  margin: $margin;
+  padding: $padding;
+  list-style-type: $type-style;
+}
+
+@mixin clear-intervals ($margin-bottom) {
+  margin: 0;
+  margin-bottom: $margin-bottom;
+  padding: 0;
+}
+
+@mixin font ($font-size, $line-height, $letter-spacing) {
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}

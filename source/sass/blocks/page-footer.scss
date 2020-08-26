@@ -1,0 +1,72 @@
+.page-footer {
+  padding: 70px 11px 25px 13px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 20px 50px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 164px 0 50px;
+  }
+}
+
+.page-footer__next-travel {
+  border-bottom: 1px solid #d7d9df;
+
+  @media (min-width: 768px) {
+    min-width: 333px;
+    border: none;
+    margin-bottom: 10px;
+  }
+}
+
+.page-footer__contacts {
+  padding: 30px 19px 20px 17px;
+
+  @media (min-width: 768px) {
+    position: relative;
+    padding: 0 40px 90px 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 190px;
+      background-color: #d7d9df;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+.page-footer__contacts .contacts__icon--phone {
+  stroke: #d7d9df;
+}
+
+.page-footer__corporate-travel {
+  padding: 30px 0 0 8px;
+  border-top: 1px solid #d7d9df;
+
+  @media (min-width: 1024px) {
+    position: relative;
+    padding-top: 0;
+    border: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 190px;
+      background-color: #d7d9df;
+      top: 0;
+      left: 0;
+    }
+  }
+}

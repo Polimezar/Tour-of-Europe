@@ -1,0 +1,23 @@
+.corporate-travel__title {
+  margin: 0;
+  margin-bottom: 18px;
+  color: #141517;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.corporate-travel__content {
+  margin: 0;
+  color: rgba(20, 21, 23, 0.5);
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    width: 353px;
+    text-align: left;
+    padding-left: 34px;
+  }
+}

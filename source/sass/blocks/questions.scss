@@ -1,0 +1,40 @@
+.questions {
+  background-color: #fbf8f8;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/sunset-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 456px;
+    margin-top: 125px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/sunset-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-image: none;
+  }
+}
+
+.questions__container {
+  padding: 50px 16px;
+
+  @media (min-width: 768px) {
+    padding: 70px 50px 74px 50px;
+  }
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 0;
+    background-image: url("../img/sunset-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 844px 456px;
+    background-position: 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/sunset-desktop@2x.png");
+    }
+  }
+}

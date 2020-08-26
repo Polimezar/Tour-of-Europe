@@ -1,0 +1,111 @@
+.promo {
+  position: relative;
+  z-index: 1;
+  background-image: url("../img/promo-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100% 235px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/promo-background-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 235px;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/promo-background-tablet@1x.png");
+    background-size: 100% 345px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-background-tablet@2x.png");
+      background-size: 100% 345px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url("../img/promo-background-desktop@1x.png");
+    background-size: 100% 860px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-background-desktop@2x.png");
+      background-size: 100% 860px;
+    }
+  }
+}
+
+.promo__container {
+  padding: 81px 16px 82px 16px;
+
+  @media (min-width: 768px) {
+    padding: 60px 164px 80px 164px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 80px 104px 400px 715px;
+  }
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 102px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: top;
+
+
+  @media (min-width: 768px) {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 30px;
+    font-size: 55px;
+    line-height: 80px;
+    text-align: left;
+  }
+}
+
+.promo__content {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #48494d;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.466667px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 12px;
+    color: #ffffff;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 35px;
+    text-align: left;
+  }
+}
+
+.promo__link {
+  padding: 19px 140px 19px 40px;
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: 234px 18px;
+
+  @media (min-width: 768px) {
+    margin: 0 92px;
+    padding-right: 107px;
+    background-position: 196px 18px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0;
+    width: 340px;
+    padding: 30px 175px 30px 40px;
+    background-position: 286px 31px;
+  }
+}

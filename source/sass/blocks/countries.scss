@@ -1,0 +1,48 @@
+.countries-tour {
+  @include list-style (0, 0, none);
+  position: relative;
+  display: flex;
+  padding-bottom: 5px;
+  list-style-type: none;
+  width: 320px;
+  overflow-x: hidden;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 956px;
+  }
+}
+
+.countries-tour__item {
+  &:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+
+.countries-tour__link {
+  display: block;
+  padding: 0 50px 10px 0;
+  color: rgba(44, 46, 63, 0.3);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: $button-letter-spacing;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #fe7865;
+  }
+
+  &--current {
+    color: #fe7865;
+  }
+}

@@ -1,0 +1,11 @@
+.container {
+  @include wrapper (320px, 0 auto);
+
+  @media (min-width: 768px) {
+    @include wrapper (768px, 0 auto);
+  }
+
+  @media (min-width: 1024px) {
+    @include wrapper (1159px, 0 auto);
+  }
+}
