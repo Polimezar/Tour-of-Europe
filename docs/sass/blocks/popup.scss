@@ -1,0 +1,101 @@
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+
+  &--show {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    &--show {
+      display: flex;
+      width: 728px;
+      background-color: #fbf8f8;
+    }
+  }
+}
+
+.popup__container {
+  padding: 100px 16px 185px 16px;
+  box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    width: 54%;
+    padding: 72px 60px 89px 60px;
+  }
+}
+
+.popup__feedback {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.popup__feedback .feedback__title {
+  line-height: 43px;
+  margin-bottom: 50px;
+}
+
+.popup__feedback .feedback__filedsed {
+  display: block;
+}
+
+.popup__feedback .feedback__submit {
+  padding: 17px 40px;
+}
+
+.popup__feedback .feedback__wrap--tel {
+  margin-bottom: 20px;
+}
+
+.popup__photo {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.popup__img {
+  display: block;
+}
+
+.popup__close {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/Cross.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.popup--success::before {
+  position: absolute;
+  z-index: 5;
+  content: "Форма успешно отправлена, спасибо! :)";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 179px 165px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: center;
+  background-color: #fbf8f8;
+}

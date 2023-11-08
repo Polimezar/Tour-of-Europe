@@ -1,0 +1,130 @@
+.feedback {
+  @media (min-width: 768px) {
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+    border-radius: 5px;
+  }
+
+  @media (min-width: 768px) {
+    justify-self: flex-end;
+    align-items: center;
+  }
+}
+
+.feedback__title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #141517;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
+
+.feedback__content {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #141517;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+
+.feedback__filedsed {
+  @media (min-width: 768px) {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 30px;
+  }
+}
+
+.feedback__wrap {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #141517;
+
+  &--tel::before {
+    position: absolute;
+    z-index: 2;
+    content: "+7";
+    width: 22px;
+    height: 22px;
+    top: 25px;
+    left: 25px;
+    align-items: center;
+    text-align: center;
+  }
+
+  &--tel::after {
+    position: absolute;
+    z-index: 2;
+    content: "*";
+    width: 6px;
+    height: 6px;
+    top: 10px;
+    left: 15px;
+    color: #fe7865;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    &--tel::before {
+      top: 15px;
+    }
+
+    &--tel::after {
+      top: 6px;
+      left: 10px;
+    }
+  }
+}
+
+.feedback__tel-input,
+.feedback__email-input {
+  padding: 25px 16px;
+  width: 288px;
+  background-color: #ffffff;
+  border: 1px solid rgba(44, 46, 63, 0.7);
+
+  @media (min-width: 768px) {
+    padding: 15px 16px;
+    width: 269px;
+  }
+}
+
+.feedback__tel-input {
+  padding-left: 50px;
+}
+
+.feedback__submit {
+  padding: 19px 103px;
+  border: none;
+
+  @media (min-width: 768px) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 17px 40px;
+  }
+}
